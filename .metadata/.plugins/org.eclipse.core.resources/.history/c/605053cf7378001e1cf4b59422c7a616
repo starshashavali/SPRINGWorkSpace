@@ -1,0 +1,17 @@
+package com.org.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.org.domain.Employee;
+@Repository
+public class UserDao {
+	
+	 
+	   public void create(Employee employee);
+	   
+	   
+	   public Employee getByEmp(Integer id);
+
+
+
+}

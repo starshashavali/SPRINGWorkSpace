@@ -1,0 +1,7 @@
+package com.tcs.user;
+
+public interface UserDao {
+	
+	public String findById(Integer id);
+
+}

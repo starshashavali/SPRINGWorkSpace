@@ -1,0 +1,10 @@
+package com.org.dao;
+
+public class UserDao {
+	
+	public void init()
+	{
+		System.out.println("connect database ");
+	}
+
+}

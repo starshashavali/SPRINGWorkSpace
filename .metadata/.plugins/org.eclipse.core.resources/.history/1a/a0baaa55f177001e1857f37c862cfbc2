@@ -1,0 +1,11 @@
+package com.org.beans;
+
+public class AXISBank implements IBank {
+
+	@Override
+	public String fixedRate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReportService {
+
+	private ReportDao dao;
+
+	public ReportService() {
+		System.out.println("Reports Dao -0-Param");
+	}
+
+	public ReportService(ReportDao dao) {
+		System.out.println("Param ReposrService...");
+		this.dao = dao;
+	}
+
+}

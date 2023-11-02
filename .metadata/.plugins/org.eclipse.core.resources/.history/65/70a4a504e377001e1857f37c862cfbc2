@@ -1,0 +1,9 @@
+package com.org.beans;
+
+public class Chip {
+	
+	public String getChipType() {
+		return "32-Bits";
+	}
+
+}

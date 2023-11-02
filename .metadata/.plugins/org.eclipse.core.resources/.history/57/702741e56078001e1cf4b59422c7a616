@@ -1,0 +1,12 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReportService {
+	
+	private ReportDao dao;
+	
+	
+
+}

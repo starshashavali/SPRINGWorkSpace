@@ -1,0 +1,17 @@
+package com.org.beans;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.org.AppConfig;
+
+public class Test {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext context =
+				new AnnotationConfigApplicationContext(AppConfig.class);
+		RBI rbi = context.getBean(RBI.class);
+		rbi.bankRate();
+		
+	}
+
+}

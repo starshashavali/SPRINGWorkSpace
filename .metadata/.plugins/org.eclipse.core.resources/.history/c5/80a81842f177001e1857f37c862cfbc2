@@ -1,0 +1,10 @@
+package com.org.beans;
+
+public class SBIBank implements IBank {
+
+	@Override
+	public String fixedRate() {
+		return "200.0";
+	}
+
+}

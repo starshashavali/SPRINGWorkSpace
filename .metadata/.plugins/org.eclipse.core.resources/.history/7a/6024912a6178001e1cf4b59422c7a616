@@ -1,0 +1,9 @@
+package com.org.beans;
+
+public class MysqlDao implements ReportDao {
+
+	public void getReport() {
+		System.out.println("Mysql dao...");
+	}
+
+}

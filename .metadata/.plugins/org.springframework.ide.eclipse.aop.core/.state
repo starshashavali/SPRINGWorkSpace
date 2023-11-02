@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="UserServiceApp"/>
+<aop-project name="SpringApp"/>
+<aop-project name="SpringJdbcApp"/>
+</aop-reference-model>

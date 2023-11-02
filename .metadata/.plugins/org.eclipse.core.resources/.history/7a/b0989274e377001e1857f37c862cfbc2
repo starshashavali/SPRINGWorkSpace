@@ -1,0 +1,21 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Robot {
+	
+	private Chip chip;
+	public Robot() {
+		System.out.println("Default construct::-0");
+	}
+
+	public Robot(Chip chip) {
+		System.out.println("Parameterized ::");
+		this.chip = chip;
+	}
+	
+	
+	
+
+}

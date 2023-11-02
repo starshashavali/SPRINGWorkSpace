@@ -1,0 +1,22 @@
+package com.org.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.org.domain.Employee;
+@Repository
+public class UserDao {
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	 
+	  public void saveData(Employee emp) {
+	        String sql = "INSERT INTO your_table_name (column1, column2, column3) VALUES (?, ?, ?)";
+	        jdbcTemplate.update(sql, emp.getValue1(), data.getValue2(), data.getValue3());
+	    }
+	   
+
+
+
+}

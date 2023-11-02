@@ -1,0 +1,18 @@
+package com.org.beans;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public class AXISBank implements IBank {
+	public AXISBank() {
+	System.out.println("Axis bank 0-param");
+	}
+
+	@Override
+	public String fixedRate() {
+		return "98.8";
+	}
+
+}

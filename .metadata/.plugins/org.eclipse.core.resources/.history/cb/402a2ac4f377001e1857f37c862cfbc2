@@ -1,0 +1,24 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RBI {
+	
+	private IBank bank;
+	
+	public RBI() {
+	System.out.println("0-param RBI");
+	}
+
+	public RBI(IBank bank) {
+	System.out.println("Param_RBI");
+		this.bank = bank;
+	}
+	
+	public void bankRate() {
+	 String fixedRate = bank.fixedRate();
+	 
+	}
+
+}

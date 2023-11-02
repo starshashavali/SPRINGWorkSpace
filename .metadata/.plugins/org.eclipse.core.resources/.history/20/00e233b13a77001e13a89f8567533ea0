@@ -1,0 +1,13 @@
+package com.injection.demo;
+
+public class Car {
+	
+	private IEngine engine;//has-A
+
+	public Car(IEngine engine) {
+		super();
+		this.engine = engine;
+	}
+	
+
+}

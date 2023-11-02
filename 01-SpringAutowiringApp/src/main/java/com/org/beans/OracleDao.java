@@ -1,0 +1,13 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Repository;
+
+@Repository("dao")
+public class OracleDao implements ReportDao {
+
+	public void getReport() {
+		System.out.println("Oracle Dao ");
+
+	}
+
+}

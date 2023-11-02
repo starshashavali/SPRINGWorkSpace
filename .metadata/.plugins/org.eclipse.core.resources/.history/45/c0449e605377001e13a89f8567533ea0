@@ -1,0 +1,21 @@
+package com.tcs.beans;
+
+public class Paymentservice {
+
+	private IPayment payment;
+
+	
+	public Paymentservice(IPayment payment) {
+		this.payment=payment;
+	}
+	public void doBilling(Double amounnt) {
+		boolean bill = payment.billProcess(amounnt);
+		if (bill) {
+			System.out.println("bill amount is debited...");
+		} else {
+			System.out.println("problem occure...");
+		}
+
+	}
+
+}

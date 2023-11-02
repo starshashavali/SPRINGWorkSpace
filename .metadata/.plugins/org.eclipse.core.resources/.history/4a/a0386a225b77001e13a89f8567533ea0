@@ -1,0 +1,11 @@
+package com.tcs.beans;
+
+public class DebitCard implements IPayment{
+
+	@Override
+	public boolean billProcess(Double amount) {
+		System.out.println("Debit card Payment...");
+		return true;
+	}
+
+}

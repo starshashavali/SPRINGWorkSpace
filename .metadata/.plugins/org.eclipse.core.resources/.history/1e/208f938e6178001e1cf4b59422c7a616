@@ -1,0 +1,10 @@
+package com.org.beans;
+
+public class OracleDao implements ReportDao {
+
+	public void getReport() {
+		System.out.println("Oracle Dao ");
+
+	}
+
+}

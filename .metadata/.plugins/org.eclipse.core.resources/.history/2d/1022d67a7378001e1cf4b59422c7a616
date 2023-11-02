@@ -1,0 +1,12 @@
+package com.org.dao;
+
+import com.org.domain.Employee;
+
+public interface UserDao {
+	
+	 
+	   public void create(Employee employee);
+
+
+
+}

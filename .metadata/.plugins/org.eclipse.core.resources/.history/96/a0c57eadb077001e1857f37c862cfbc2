@@ -1,0 +1,9 @@
+package com.tcs.beans;
+
+public class TestMain {
+	public static void main(String[] args) {
+		Car car=new Car(new PetroleEngine())
+		
+	}
+
+}

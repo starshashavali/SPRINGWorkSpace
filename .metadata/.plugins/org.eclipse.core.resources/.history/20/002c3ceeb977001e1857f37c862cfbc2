@@ -1,0 +1,13 @@
+package com.tcs.user.impl;
+
+import com.tcs.user.IUserDao;
+
+public class IUserDaoImpl implements IUserDao {
+
+	@Override
+	public String findById(Integer id) {
+		
+		return "suceessfully fetched...";
+	}
+
+}

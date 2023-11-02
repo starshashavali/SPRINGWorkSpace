@@ -1,0 +1,11 @@
+package com.org.beans;
+
+public class RBI {
+	
+	private IBank bank;
+	
+	public RBI() {
+	System.out.println("0-param RBI");
+	}
+
+}

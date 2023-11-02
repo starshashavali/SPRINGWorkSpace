@@ -1,0 +1,32 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RBI {
+
+	private IBank bank;
+
+	public RBI() {
+		System.out.println("0-param RBI");
+	}
+
+	public RBI(IBank bank) {
+		System.out.println("Param_RBI");
+		this.bank = bank;
+	}
+
+    public void bank() {
+        if (this.bank != null) { // Check if bank is not null
+            String fixedRate = this.bank.fixedRate();
+            if (fixedRate != null) {
+                System.out.println("rate of bank ::" + fixedRate);
+            } else {
+                System.out.println("Given value is null");
+            }
+        } else {
+            System.out.println("Bank object is null");
+        }
+	}
+
+}

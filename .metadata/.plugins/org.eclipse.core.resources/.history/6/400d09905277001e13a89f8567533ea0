@@ -1,0 +1,11 @@
+package com.tcs.beans;
+
+public class CreditCard implements IPayment{
+
+	@Override
+	public boolean billProcess(Double amount) {
+		System.out.println(" Credit card bill Payment...");
+		return false;
+	}
+
+}

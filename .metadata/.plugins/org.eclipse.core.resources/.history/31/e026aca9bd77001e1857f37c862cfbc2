@@ -1,0 +1,15 @@
+package com.tcs.user;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMain {
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("resource")
+		ApplicationContext ctxt=new ClassPathXmlApplicationContext("src/main/java/com/tcs/user/config.xml");
+		UserService service = ctxt.getBean(UserService.class);
+		service.printName(1);
+	}
+
+}

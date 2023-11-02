@@ -1,0 +1,11 @@
+package com.tcs.spring;
+
+public class TestMain {
+	public static void main(String[] args) {
+		
+		Payment payment=new Payment(new SodexCard());
+		payment.doBilling();
+		
+	}
+
+}

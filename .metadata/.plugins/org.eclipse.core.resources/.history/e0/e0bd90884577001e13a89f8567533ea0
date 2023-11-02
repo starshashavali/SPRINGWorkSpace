@@ -1,0 +1,13 @@
+package com.tcs.spring;
+
+public class Payment {
+	
+	private IPayment payment;
+
+	public Payment(IPayment payment) {
+		this.payment = payment;
+	}
+	
+	
+
+}

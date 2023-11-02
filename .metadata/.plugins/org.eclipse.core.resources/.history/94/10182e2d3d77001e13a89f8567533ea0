@@ -1,0 +1,12 @@
+package com.org.tcs;
+
+public class Car {
+
+	private IEngine engine;
+
+	public Car(IEngine engine) {
+		this.engine = engine;
+	}
+	
+
+}

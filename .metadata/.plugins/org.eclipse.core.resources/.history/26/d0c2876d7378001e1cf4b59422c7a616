@@ -1,0 +1,18 @@
+package com.org.dao;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import com.org.domain.Employee;
+
+public interface UserDao {
+	
+	 public void setDataSource(DataSource ds);
+	 
+	   public void create(String name, Integer age);
+
+	   public List<Employee> listStudents();
+
+
+}

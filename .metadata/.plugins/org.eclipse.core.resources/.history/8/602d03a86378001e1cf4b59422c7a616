@@ -1,0 +1,26 @@
+package com.org.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReportService {
+	@Autowired
+	private ReportDao dao;
+
+	public ReportService() {
+		System.out.println("Reports Dao -0-Param");
+	}
+
+/*constructor injection
+ * 	public ReportService(ReportDao dao) {
+		System.out.println("Param ReposrService...");
+		this.dao = dao;
+	}*/
+
+	public void generateReport() {
+		dao.getReport();
+		System.out.println("report is generated..");
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.tcs.beans;
+
+public class Car {
+	private IEngine engine;
+
+	public IEngine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(IEngine engine) {
+		System.out.println("Setter...");
+		this.engine = engine;
+	}
+
+	public Car(IEngine engine) {
+		this.engine = engine;
+	}
+	
+	public  void drive() {
+		Integer status = engine.start();
+		if(status>=1) {
+			System.out.println("car is started...");
+		}else {
+			System.out.println("Something went wrong...");
+		}
+	}
+
+}

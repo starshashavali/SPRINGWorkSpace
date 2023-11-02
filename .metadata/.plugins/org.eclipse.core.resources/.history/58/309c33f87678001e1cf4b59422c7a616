@@ -1,0 +1,5 @@
+package com.org.dao.impl;
+
+public class EmployeeDAOImpl {
+
+}

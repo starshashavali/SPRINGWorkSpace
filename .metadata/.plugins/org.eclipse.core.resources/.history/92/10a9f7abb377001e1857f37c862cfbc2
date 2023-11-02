@@ -1,0 +1,12 @@
+package com.tcs.beans;
+
+public class TestMain {
+	public static void main(String[] args) {
+		Car car=new Car(new PetroleEngine());
+		car.drive();
+		Car carObj=new Car();
+		carObj.setEngine(new DieselEngine());
+		carObj.drive();
+	}
+
+}

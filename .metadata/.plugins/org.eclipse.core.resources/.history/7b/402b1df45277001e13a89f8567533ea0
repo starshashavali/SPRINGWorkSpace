@@ -1,0 +1,9 @@
+package com.tcs.beans;
+
+public class Paymentservice {
+	
+	private IPayment payment;
+	
+	
+
+}

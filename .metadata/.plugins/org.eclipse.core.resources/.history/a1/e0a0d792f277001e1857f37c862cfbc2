@@ -1,0 +1,13 @@
+package com.org.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AXISBank implements IBank {
+
+	@Override
+	public String fixedRate() {
+		return "98.8";
+	}
+
+}
